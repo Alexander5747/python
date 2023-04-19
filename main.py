@@ -6,9 +6,8 @@ root = Tk()
 root.title("Список задач")
 root.geometry('400x520+410+150')
 root.resizable(False, False)
-root.config(bg='#B186B9')
-
-
+root.config(bg='#4682B4')
+	
 # Logic
 tasks = []
 
@@ -47,11 +46,11 @@ def load_tasks():
 # Content
 Title = Label(root,
                   text='Список задач',
-                  bg='#B186B9',
+                  bg='#4682B4',
                   font=('Arial',20, 'bold'),
                   foreground='white',
                   )
-listbox = Listbox(root, height=20, width=34, ) # listvariable=(listing_var)
+listbox = Listbox(root, height=20, width=34, ) 
 en = Entry(root)
 addButton = Button(root, text='Добавить', justify='center', command= addtask)
 delButton = Button(root, text='Удалить',  justify='center', command= deltask)
